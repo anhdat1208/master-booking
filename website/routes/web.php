@@ -21,7 +21,7 @@ Route::group(['middleware' => 'setDefaultGuard:admin', 'prefix' => 'admin', 'nam
 Route::group(['middleware' => 'setDefaultGuard:bo', 'prefix' => 'bo', 'namespace' => 'Bo', 'as' => 'bo.'], function () {
     Auth::routes();
     Route::group(['middleware' => 'auth:bo'], function () {
-        Route::get('/', 'HomeController@index')->name('home');
+        Route::get('/', 'HomeController@index')->name('home'); 
     });
 });
 
