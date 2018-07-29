@@ -1,0 +1,2 @@
+@extends('bo.layouts.dashboard')
+
